@@ -10,9 +10,11 @@ const listenIP = "127.0.0.1";
 app.use(express.json());
 
 // GET /
-app.get("/", (req, res) => {
+app.get("/name", (req, res) => {
+  const { first, last } = req.query;
+  const name = !first || !last ? "Guest" : `${first} ${last}`;
   res.status(200).type("text/html; charset=utf-8");
-  res.send("<h1>Hello from Express GET / route!</h1>");
+  res.send(`<h1>Hello, ${name}</h1>`);
 });
 
 // 404 handler
