@@ -1,4 +1,13 @@
 {
+  "name": "p3",
+  "version": "1.0.0",
+  "main": "lab-03-module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "express": "^5.1.0"
   }
